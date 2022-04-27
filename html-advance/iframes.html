@@ -7,7 +7,19 @@
     <title>I - Frames</title>
 </head>
 <body>
-    <iframe frameborder="0" width="800" height="600" src="./links.html"></iframe>
+    <h>Open in Frame</h>
+    <ul>
+        <li><a target="frame1" href="./links.html">Links</a></li>
+        <li><a target="frame1" href="./inner-links.html">Inner Links</a></li>
+    </ul>
+    <iframe name="frame1" frameborder="1" width="400" height="400" src="./links.html"></iframe>
+    <h3>Embedded Example Page</h3>
+    <iframe frameborder="1" width="400" height="400" src="https://example.com"></iframe>
     
 </body>
 </html>
+
+<!-- Iframes are inline -->
+<!-- With iframe we should write name instead of id for the traget in anchor -->
+<!-- If we set the traget in the anchor to the name of the iframe, it will open in that iframe -->
+<!-- Many websites are not opened in iframes. Eg: google.com -->
